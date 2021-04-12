@@ -1,0 +1,484 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L i2c-tiny-usb-rescue:ATtiny45-20PU-MCU_Microchip_ATtiny U1
+U 1 1 5BB3EC12
+P 4950 4000
+F 0 "U1" H 4420 4046 50  0000 R CNN
+F 1 "ATtiny45-20PU" H 4420 3955 50  0000 R CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4950 4000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 4950 4000 50  0001 C CNN
+	1    4950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:D_Zener_Small_ALT-Device D2
+U 1 1 5BB3ECD9
+P 3350 3450
+F 0 "D2" H 3300 3400 50  0000 C CNN
+F 1 "3V6" H 3350 3564 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3350 3450 50  0001 C CNN
+F 3 "~" V 3350 3450 50  0001 C CNN
+	1    3350 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:D_Zener_Small_ALT-Device D1
+U 1 1 5BB3ED55
+P 3150 3400
+F 0 "D1" H 3150 3300 50  0000 C CNN
+F 1 "3V6" H 3150 3500 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3150 3400 50  0001 C CNN
+F 3 "~" V 3150 3400 50  0001 C CNN
+	1    3150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:R_Small-Device R1
+U 1 1 5BB3EDCD
+P 3150 2600
+F 0 "R1" H 3220 2646 50  0000 L CNN
+F 1 "2K2" H 3220 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3080 2600 50  0001 C CNN
+F 3 "~" H 3150 2600 50  0001 C CNN
+	1    3150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:R_Small-Device R3
+U 1 1 5BB3DD3F
+P 3800 3150
+F 0 "R3" V 3900 3000 50  0000 L CNN
+F 1 "68" V 3900 3150 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3730 3150 50  0001 C CNN
+F 3 "~" H 3800 3150 50  0001 C CNN
+	1    3800 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:R_Small-Device R2
+U 1 1 5BB3DD67
+P 3800 3050
+F 0 "R2" V 3700 2900 50  0000 L CNN
+F 1 "68" V 3700 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3730 3050 50  0001 C CNN
+F 3 "~" H 3800 3050 50  0001 C CNN
+	1    3800 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:Crystal-Device Y1
+U 1 1 5BB3E335
+P 6550 4050
+F 0 "Y1" V 6504 4181 50  0000 L CNN
+F 1 "12Mhz" V 6300 3950 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering" H 6550 4050 50  0001 C CNN
+F 3 "~" H 6550 4050 50  0001 C CNN
+	1    6550 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:C_Small-Device C1
+U 1 1 5BB3E432
+P 6900 3900
+F 0 "C1" V 6850 3800 50  0000 C CNN
+F 1 "22p" V 6850 4050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6938 3750 50  0001 C CNN
+F 3 "~" H 6900 3900 50  0001 C CNN
+	1    6900 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:C_Small-Device C2
+U 1 1 5BB3E48C
+P 6900 4200
+F 0 "C2" V 6850 4100 50  0000 C CNN
+F 1 "22p" V 6850 4350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6938 4050 50  0001 C CNN
+F 3 "~" H 6900 4200 50  0001 C CNN
+	1    6900 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 4000 6250 4000
+Wire Wire Line
+	6250 4000 6250 3900
+Wire Wire Line
+	6250 3900 6550 3900
+Wire Wire Line
+	5550 4100 6250 4100
+Wire Wire Line
+	6250 4100 6250 4200
+Wire Wire Line
+	6250 4200 6550 4200
+Connection ~ 6550 3900
+Connection ~ 6550 4200
+Wire Wire Line
+	7150 3900 7150 4200
+Connection ~ 7150 4200
+$Comp
+L i2c-tiny-usb-rescue:GND-power #PWR09
+U 1 1 5BB3EFEA
+P 7150 4800
+F 0 "#PWR09" H 7150 4550 50  0001 C CNN
+F 1 "GND" H 7155 4627 50  0000 C CNN
+F 2 "" H 7150 4800 50  0001 C CNN
+F 3 "" H 7150 4800 50  0001 C CNN
+	1    7150 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:GND-power #PWR06
+U 1 1 5BB3F016
+P 4950 4750
+F 0 "#PWR06" H 4950 4500 50  0001 C CNN
+F 1 "GND" H 4955 4577 50  0000 C CNN
+F 2 "" H 4950 4750 50  0001 C CNN
+F 3 "" H 4950 4750 50  0001 C CNN
+	1    4950 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4750 4950 4600
+Wire Wire Line
+	7150 4200 7150 4800
+$Comp
+L i2c-tiny-usb-rescue:+5V-power #PWR02
+U 1 1 5BB4070B
+P 3150 2300
+F 0 "#PWR02" H 3150 2150 50  0001 C CNN
+F 1 "+5V" H 3165 2473 50  0000 C CNN
+F 2 "" H 3150 2300 50  0001 C CNN
+F 3 "" H 3150 2300 50  0001 C CNN
+	1    3150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:+5V-power #PWR05
+U 1 1 5BB409E6
+P 4950 3000
+F 0 "#PWR05" H 4950 2850 50  0001 C CNN
+F 1 "+5V" H 4965 3173 50  0000 C CNN
+F 2 "" H 4950 3000 50  0001 C CNN
+F 3 "" H 4950 3000 50  0001 C CNN
+	1    4950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3050 3350 3050
+$Comp
+L i2c-tiny-usb-rescue:GND-power #PWR03
+U 1 1 5BB42F8E
+P 3150 3650
+F 0 "#PWR03" H 3150 3400 50  0001 C CNN
+F 1 "GND" H 3155 3477 50  0000 C CNN
+F 2 "" H 3150 3650 50  0001 C CNN
+F 3 "" H 3150 3650 50  0001 C CNN
+	1    3150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:GND-power #PWR04
+U 1 1 5BB42FF8
+P 3350 3650
+F 0 "#PWR04" H 3350 3400 50  0001 C CNN
+F 1 "GND" H 3355 3477 50  0000 C CNN
+F 2 "" H 3350 3650 50  0001 C CNN
+F 3 "" H 3350 3650 50  0001 C CNN
+	1    3350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3650 3350 3550
+Wire Wire Line
+	3350 3350 3350 3050
+Connection ~ 3350 3050
+$Comp
+L i2c-tiny-usb-rescue:GND-power #PWR01
+U 1 1 5BB46F04
+P 2600 4750
+F 0 "#PWR01" H 2600 4500 50  0001 C CNN
+F 1 "GND" H 2605 4577 50  0000 C CNN
+F 2 "" H 2600 4750 50  0001 C CNN
+F 3 "" H 2600 4750 50  0001 C CNN
+	1    2600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2700 3150 3150
+Wire Wire Line
+	3350 3050 3700 3050
+Wire Wire Line
+	4950 3400 4950 3000
+Wire Wire Line
+	7000 3900 7150 3900
+Wire Wire Line
+	7000 4200 7150 4200
+Wire Wire Line
+	6550 4200 6800 4200
+Wire Wire Line
+	6550 3900 6800 3900
+Wire Wire Line
+	3900 3050 6000 3050
+Wire Wire Line
+	6000 3050 6000 3900
+Wire Wire Line
+	6000 3900 5550 3900
+Wire Wire Line
+	3900 3150 5850 3150
+Wire Wire Line
+	5850 3150 5850 3700
+Wire Wire Line
+	5850 3700 5550 3700
+Wire Wire Line
+	2600 3450 2600 4750
+Wire Wire Line
+	2500 3450 2600 3450
+Text Label 5700 4200 0    50   ~ 0
+SCL_5V
+Text Label 5650 3800 0    50   ~ 0
+SDA_5V
+Wire Wire Line
+	2900 3150 3150 3150
+Wire Wire Line
+	3150 3500 3150 3650
+Wire Wire Line
+	3150 3300 3150 3150
+Connection ~ 3150 3150
+Wire Wire Line
+	3150 3150 3700 3150
+Wire Wire Line
+	3150 2300 3150 2400
+Wire Wire Line
+	2900 2850 2900 2400
+Wire Wire Line
+	2900 2400 3150 2400
+Connection ~ 3150 2400
+Wire Wire Line
+	3150 2400 3150 2500
+$Comp
+L Device:R R5
+U 1 1 5F215103
+P 6150 2400
+F 0 "R5" H 6220 2446 50  0000 L CNN
+F 1 "10k" H 6220 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6080 2400 50  0001 C CNN
+F 3 "~" H 6150 2400 50  0001 C CNN
+	1    6150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F2166EB
+P 5700 2500
+F 0 "R4" H 5770 2546 50  0000 L CNN
+F 1 "10k" H 5770 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5630 2500 50  0001 C CNN
+F 3 "~" H 5700 2500 50  0001 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer_RTC:DS1307+ U2
+U 1 1 5F24197F
+P 7800 2750
+F 0 "U2" H 8344 2796 50  0000 L CNN
+F 1 "DS1307+" H 8344 2705 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7800 2250 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 7800 2550 50  0001 C CNN
+	1    7800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y2
+U 1 1 5F243393
+P 6750 2900
+F 0 "Y2" V 6704 2769 50  0000 R CNN
+F 1 "32.768kHz" V 6795 2769 50  0000 R CNN
+F 2 "Crystal:Crystal_Round_D3.0mm_Vertical" H 6750 2900 50  0001 C CNN
+F 3 "~" H 6750 2900 50  0001 C CNN
+	1    6750 2900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7300 2850 7150 2850
+Wire Wire Line
+	7150 2850 7150 2750
+Wire Wire Line
+	7150 2750 6750 2750
+Wire Wire Line
+	6750 3050 7150 3050
+Wire Wire Line
+	7150 3050 7150 2950
+Wire Wire Line
+	7150 2950 7300 2950
+$Comp
+L power:GND #PWR011
+U 1 1 5F270C7C
+P 7800 3150
+F 0 "#PWR011" H 7800 2900 50  0001 C CNN
+F 1 "GND" H 7805 2977 50  0000 C CNN
+F 2 "" H 7800 3150 50  0001 C CNN
+F 3 "" H 7800 3150 50  0001 C CNN
+	1    7800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F271A01
+P 8800 2750
+F 0 "BT1" H 8918 2846 50  0000 L CNN
+F 1 "CR1220" H 8918 2755 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_500" V 8800 2810 50  0001 C CNN
+F 3 "~" V 8800 2810 50  0001 C CNN
+	1    8800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2350 8800 2350
+Wire Wire Line
+	8800 2350 8800 2550
+Wire Wire Line
+	7800 3150 8800 3150
+Wire Wire Line
+	8800 3150 8800 2850
+Connection ~ 7800 3150
+$Comp
+L power:+5V #PWR010
+U 1 1 5F277995
+P 7700 2350
+F 0 "#PWR010" H 7700 2200 50  0001 C CNN
+F 1 "+5V" H 7715 2523 50  0000 C CNN
+F 2 "" H 7700 2350 50  0001 C CNN
+F 3 "" H 7700 2350 50  0001 C CNN
+	1    7700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5F2782D5
+P 5700 2350
+F 0 "#PWR07" H 5700 2200 50  0001 C CNN
+F 1 "+5V" H 5715 2523 50  0000 C CNN
+F 2 "" H 5700 2350 50  0001 C CNN
+F 3 "" H 5700 2350 50  0001 C CNN
+	1    5700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5F27B8DC
+P 6150 2250
+F 0 "#PWR08" H 6150 2100 50  0001 C CNN
+F 1 "+5V" H 6165 2423 50  0000 C CNN
+F 2 "" H 6150 2250 50  0001 C CNN
+F 3 "" H 6150 2250 50  0001 C CNN
+	1    6150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3800 5700 3800
+Wire Wire Line
+	5700 3800 5700 2650
+Wire Wire Line
+	5700 2650 7300 2650
+Wire Wire Line
+	6150 4200 6150 2550
+Wire Wire Line
+	6150 2550 7300 2550
+Wire Wire Line
+	5550 4200 6150 4200
+Connection ~ 5700 2650
+Connection ~ 6150 2550
+$Comp
+L Device:C C3
+U 1 1 5F2D344A
+P 7850 4250
+F 0 "C3" H 7965 4296 50  0000 L CNN
+F 1 "100nF" H 7965 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7888 4100 50  0001 C CNN
+F 3 "~" H 7850 4250 50  0001 C CNN
+	1    7850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5F2D4B79
+P 8200 4250
+F 0 "C4" H 8318 4296 50  0000 L CNN
+F 1 "10uF" H 8318 4205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8238 4100 50  0001 C CNN
+F 3 "~" H 8200 4250 50  0001 C CNN
+	1    8200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5F2D58FB
+P 7850 4400
+F 0 "#PWR013" H 7850 4150 50  0001 C CNN
+F 1 "GND" H 7855 4227 50  0000 C CNN
+F 2 "" H 7850 4400 50  0001 C CNN
+F 3 "" H 7850 4400 50  0001 C CNN
+	1    7850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5F2D6CC2
+P 8200 4400
+F 0 "#PWR015" H 8200 4150 50  0001 C CNN
+F 1 "GND" H 8205 4227 50  0000 C CNN
+F 2 "" H 8200 4400 50  0001 C CNN
+F 3 "" H 8200 4400 50  0001 C CNN
+	1    8200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5F2D73B8
+P 7850 4100
+F 0 "#PWR012" H 7850 3950 50  0001 C CNN
+F 1 "+5V" H 7865 4273 50  0000 C CNN
+F 2 "" H 7850 4100 50  0001 C CNN
+F 3 "" H 7850 4100 50  0001 C CNN
+	1    7850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 5F2D7A7E
+P 8200 4100
+F 0 "#PWR014" H 8200 3950 50  0001 C CNN
+F 1 "+5V" H 8215 4273 50  0000 C CNN
+F 2 "" H 8200 4100 50  0001 C CNN
+F 3 "" H 8200 4100 50  0001 C CNN
+	1    8200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L i2c-tiny-usb-rescue:USB_A-Connector J1
+U 1 1 5F21A3B3
+P 2600 3050
+F 0 "J1" H 2657 3517 50  0000 C CNN
+F 1 "USB_A" H 2657 3426 50  0000 C CNN
+F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 2750 3000 50  0001 C CNN
+F 3 " ~" H 2750 3000 50  0001 C CNN
+	1    2600 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 3450
+$EndSCHEMATC
